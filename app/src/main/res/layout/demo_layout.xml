@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/buttonDEMO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/body2"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_alignTop="@+id/seekBar2"
+            android:layout_toRightOf="@+id/seekBar2"
+            android:layout_toEndOf="@+id/seekBar2"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

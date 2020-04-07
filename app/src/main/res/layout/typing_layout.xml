@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/cmdline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/clearcmd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/start"
+            android:layout_alignLeft="@+id/start"
+            android:layout_alignEnd="@+id/start"
+            android:layout_alignRight="@+id/start"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="136dp"
+            android:layout_marginLeft="136dp"
+            android:layout_marginEnd="-136dp"
+            android:layout_marginRight="-136dp"
+            android:layout_marginBottom="320dp"
+            android:text="@string/right" />
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/right"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-104dp"
+            android:layout_marginLeft="-104dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginRight="104dp"
+            android:layout_marginBottom="330dp"
+            android:text="LEFT"
+            android:layout_alignLeft="@+id/right" />
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Enter" />
+
+        <Button
+
+            android:id="@+id/start"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enter"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_toStartOf="@+id/enter"
+            android:layout_toLeftOf="@+id/enter"
+            android:gravity="center|center_horizontal"
+            android:text="START " />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/start"
+            android:layout_alignLeft="@+id/start"
+            android:layout_alignEnd="@+id/start"
+            android:layout_alignRight="@+id/start"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="-16dp"
+            android:layout_marginRight="-16dp"
+            android:layout_marginBottom="252dp"
+            android:text="STOP" />
+    </RelativeLayout>
+
+
+</LinearLayout>
